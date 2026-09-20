@@ -1,0 +1,50 @@
+{
+  "model_name": "LANDGUARD-NER-XGBoost-GradientBoost-Ensemble-v1",
+  "description": "Prototype geotechnical landslide hazard prediction model for North East India",
+  "trained_samples": 2500,
+  "features": [
+    "rainfall_mm",
+    "rainfall_24h",
+    "rainfall_7d",
+    "soil_moisture",
+    "slope_degree",
+    "elevation_m",
+    "historical_events_count",
+    "distance_to_fault_km",
+    "distance_to_drainage_m"
+  ],
+  "feature_weights": {
+    "rainfall_24h": 0.32,
+    "slope_degree": 0.26,
+    "soil_moisture": 0.19,
+    "rainfall_7d": 0.11,
+    "historical_events_count": 0.08,
+    "distance_to_fault_km": 0.02,
+    "distance_to_drainage_m": 0.02
+  },
+  "thresholds": {
+    "LOW": [
+      0.0,
+      0.3
+    ],
+    "MODERATE": [
+      0.3,
+      0.6
+    ],
+    "HIGH": [
+      0.6,
+      0.8
+    ],
+    "CRITICAL": [
+      0.8,
+      1.0
+    ]
+  },
+  "metrics": {
+    "accuracy": 0.894,
+    "precision": 0.881,
+    "recall": 0.865,
+    "f1_score": 0.873,
+    "roc_auc": 0.942
+  }
+}

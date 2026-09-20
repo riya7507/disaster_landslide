@@ -1,0 +1,6 @@
+{
+  "name": "LANDGUARD - Landslide Early Warning & Risk Monitoring",
+  "description": "AI-Powered Landslide Early Warning, Spatial Risk Grid, and Impact Monitoring System for the North Eastern Region of India (SIH26001).",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
